@@ -7,8 +7,9 @@ CREATE TABLE products (
     product_name VARCHAR (100) NOT NULL,
     depart_name VARCHAR (100) NOT NULL,
     price DECIMAL (8,2) NOT NULL,
-    stock_quantity INT NOT NULL
-)
+    stock_quantity INT NOT NULL,
+    PRIMARY KEY (item_id)
+);
 
 INSERT INTO products (product_name, depart_name, price, stock_quantity)
 VALUES ("iPhone X", "Electronics", 999.00, 5), 
@@ -21,3 +22,4 @@ VALUES ("iPhone X", "Electronics", 999.00, 5),
                ("Sunglasses", "Accesories", 50.00, 20), 
                ("Guitar", "Music", 300.00, 5), 
                ("Bongos", "Music", 100.00, 10);
+
